@@ -9,30 +9,9 @@
 
 **Together:** the Agent Service routes user intents; the MCP server translates them into tool/SQL calls; PostgreSQL+pgvector answers semantic and analytical questions.
 
-## Architecture (high level)
+## Architecture
 
-```plaintext
-┌─────────────────────┐                         ┌─────────────────┐
-│   Zava Agent App    │       stdio/https       │   MCP Server    │
-│   (app.py)          │◄───────────────────────►│ (sales_analysis)│
-│                     │      MCP Transports     └─────────────────┘
-│ ┌─────────────────┐ │                                 │
-│ │ Azure AI        │ │                                 ▼
-│ │ Agents Service  │ │                         ┌─────────────────┐
-│ │ + Streaming     │ │                         │ Azure Database  │
-│ │                 │ │                         │ for PostgreSQL  │
-│ └─────────────────┘ │                         │   + pgvector    │
-└─────────────────────┘                         └─────────────────┘
-         │                                              |
-         ▼                                              ▼
-┌─────────────────────┐                         ┌─────────────────┐
-│ Azure OpenAI        │                         │ Zava Sales      │
-│ Model Deployments   │                         │ Database with   │
-│ - gpt-4o-mini       │                         │ Semantic Search │
-│ - text-embedding-3- │                         └─────────────────┘
-│   small             │
-└─────────────────────┘
-```
+![Image shows the architecture for the Zava Sales Analysis solution](../media/solution-overview.png)
 
 ## Key benefits of MCP Servers
 
