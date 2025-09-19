@@ -212,10 +212,3 @@ Next, we log in to Azure AI Foundry to retrieve the project endpoint, which the 
     - The **instructions** folder: Contains the instructions passed to the LLM.
 
     ![Lab folder structure](../media/project-structure-self-guided-csharp.png)
-
-## Pro Tips
-
-!!! tips
-    1. The **Burger Menu** in the right-hand panel of the lab environment offers additional features, including the **Split Window View** and the option to end the lab. The **Split Window View** allows you to maximize the lab environment to full screen, optimizing screen space. The lab's **Instructions** and **Resources** panel will open in a separate window.
-    2. If the lab instructions are slow to scroll in the lab environment, try copying the instructions’ URL and opening it in **your computer’s local browser** for a smoother experience.
-    3. If you have trouble viewing an image, simply **click the image to enlarge it**.

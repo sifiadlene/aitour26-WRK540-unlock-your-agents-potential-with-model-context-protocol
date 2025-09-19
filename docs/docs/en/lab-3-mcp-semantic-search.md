@@ -119,16 +119,27 @@ From VS Code, stop the agent app by pressing <kbd>Shift + F5</kbd>.
     1. Select the **Explorer** icon from the sidebar of VS Code.
     2. Navtigate to the `mcp_server\sales_analysis` folder.
     3. Open the `sales_analysis_tools.py` file.
-    4. This file contains the MCP tools for the sales analysis agent, including the semantic search tool.
+        
+        This file contains the MCP tools for the sales analysis agent, including the semantic search tool.
 
-    ![Open MCP Server Tools in VS Code](../media/vs-code-open-mcp-server.png)
+        ![Open MCP Server Tools in VS Code](../media/vs-code-open-mcp-server.png)
 
     5. Scroll down to around line 70 and look for the `semantic_search_products` method. This method is responsible for performing semantic search on the sales data. You'll notice the **@mcp.tool()** decorator is commented out. This decorator is used to register the method as an MCP tool, allowing it to be called by the agent.
 
-    6. Uncomment the `@mcp.tool()` decorator by removing the `#` at the beginning of the line. This will enable the semantic search tool.
+    6. **Remove** the `#` symbol and following space character before the `# @mcp.tool()` decorator to enable the semantic search mcp tool.
 
         ```python
         # @mcp.tool()
+        async def semantic_search_products(
+            ctx: Context,
+            query_description: Annotated[str, Field(
+            ...
+        ```
+
+        After enabling the decorator, the method should look like this:
+
+        ```python
+        @mcp.tool()
         async def semantic_search_products(
             ctx: Context,
             query_description: Annotated[str, Field(
@@ -141,7 +152,7 @@ From VS Code, stop the agent app by pressing <kbd>Shift + F5</kbd>.
             **Purpose:** Setting a breakpoint in the `semantic_search_products` method lets you observe exactly how the semantic search process works, including query processing and database interactions.
 
             **Steps:**
-            
+
             1. **Set the breakpoint:** Click in the gutter (left margin) next to line 104, where you see `rls_user_id = get_rls_user_id(ctx)`. A red dot will appear, confirming the breakpoint is set.
 
             2. **Debug and observe:** When you run the agent app in debug mode, execution will pause at this breakpoint. You can then:

@@ -147,8 +147,3 @@ Follow these steps to open the workshop in Visual Studio Code:
     * `webapp`: The front-end client application. Note: This is a Python application, which Aspire will manage the lifecycle of.
 
     ![Lab folder structure](../../media/project-structure-self-guided-csharp.png)
-
-## Pro Tips
-
-!!! tips
-    1. The **Burger Menu** in the right-hand panel of the lab environment offers additional features, including the **Split Window View** and the option to end the lab. The **Split Window View** allows you to maximize the lab environment to full screen, optimizing screen space. The lab's **Instructions** and **Resources** panel will open in a separate window.
