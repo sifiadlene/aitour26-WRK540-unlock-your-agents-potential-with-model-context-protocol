@@ -61,17 +61,16 @@ In this lab, you'll enable two powerful tools that work together: the Code Inter
             self.toolset.add(mcp_server_tools)
         ```
 
+        ??? info "For Developers: Human-in-the-Loop Approval Mode"
+            The MCP Server tools are configured with `"never"` for human approval requirements (the default is `"always"`). We use "never" mode in this workshop because we're only performing safe operations like reading sales data. For production applications involving sensitive operations like financial transactions or data modifications, you should use "always" mode to require human authorization. To learn more about implementing **Human-in-the-Loop** approval workflows, see the [Azure AI Agents Human in the Loop sample](https://github.com/Azure/azure-sdk-for-python/blob/main/sdk/ai/azure-ai-agents/samples/agents_tools/sample_agents_mcp.py){:target="_blank"}.
+
     ## Start the Agent App
 
-    1. Copy the text below to the clipboard:
+    1. Select the **Run and Debug** icon on the left sidebar of VS Code.
+    2. Select the "**🌎🤖Debug Compound: Agent and MCP (http)**" as the launch configuration.
+    3. Select the green **Run** button (or press <kbd>F5</kbd>) to start the agent app.
 
-    ```text
-    Debug: Select and Start Debugging
-    ```
-
-    1. Press <kbd>F1</kbd> to open the VS Code Command Palette.
-    1. Paste the text into the Command Palette and select **Debug: Select and Start Debugging**.
-    1. Select **🌎🤖Debug Compound: Agent and MCP (http)** from the list. This will start the agent app and the web chat client.
+    ![Start debugging in VS Code](../media/vs-code-start-debug.png)
 
     This starts the following processes:
 
