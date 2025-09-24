@@ -176,11 +176,11 @@ From VS Code, stop the agent app by pressing <kbd>Shift + F5</kbd>.
 
     In this section, you will implement semantic search using the Model Context Protocol (MCP) to enhance the agent's capabilities.
 
-    1. Open the `McpHost.cs` file from the `McpAgentWorkshop.WorkshopApi` project.
-    1. Locate where the other MCP tools are registered with the MCP server, and register the `SemanticSearchTools` class as an MCP tool.
+    1. Open the `McpHost.cs` file from the `McpAgentWorkshop.McpServer` project.
+    1. Locate where the other MCP tools are registered with the MCP server, and register the `SemanticSearchTools` class as an MCP tool using `WithTools`:
 
         ```csharp
-        builder.Services.AddMcpTool<SemanticSearchTools>();
+        .WithTools<SemanticSearchTools>();
         ```
 
         !!! info "Note"
