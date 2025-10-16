@@ -58,6 +58,40 @@ plugins:
             danger: Danger
             success: Success
             question: Question
+        - locale: es
+          name: Español
+          site_name: Desbloquea el Potencial de tus Agentes con MCP
+          admonition_translations:
+            tip: Consejo
+            warning: Advertencia
+            info: Información
+            note: Nota
+            danger: Peligro
+            success: Éxito
+            question: Pregunta
+          nav_translations:
+            Workshop Introduction: Introducción al Taller
+            Workshop Navigation: Navegación del Taller
+            Getting Started: Comenzando
+            Open the Workshop: Abrir el Taller
+            Architecture Overview: Visión General de la Arquitectura
+            Agent Services Labs: Laboratorios de Servicios de Agentes
+            AI Foundry Agent Services: Servicios de Agentes de AI Foundry
+            Lab 1 Agent Instructions: Laboratorio 1 Instrucciones del Agente
+            Lab 2 Start your Agent: Laboratorio 2 Iniciar tu Agente
+            Lab 3 Semantic Search: Laboratorio 3 Búsqueda Semántica
+            Observability Labs: Laboratorios de Observabilidad
+            Observability Overview: Visión General de Observabilidad
+            Lab 5 Service Monitoring: Laboratorio 5 Monitoreo de Servicios
+            Lab 6 Understand Tracing: Laboratorio 6 Entender el Rastreo
+            Star and Connect: Marcar con Estrella y Conectar
+            Finishing Up: Finalizando
+            Summary: Resumen
+            Resources: Recursos
+            Bonus content: Contenido Adicional
+            Securing Agent Data: Asegurar Datos del Agente
+            Local Tracing with Aspire: Rastreo Local con Aspire
+            About: Acerca de
 
 
 theme:
