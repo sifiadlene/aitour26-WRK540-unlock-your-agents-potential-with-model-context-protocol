@@ -1,8 +1,8 @@
 <Project>
   <PropertyGroup>
     <ManagePackageVersionsCentrally>true</ManagePackageVersionsCentrally>
-    <AspireVersion>9.4.2</AspireVersion>
-    <AspireVersionPreviewSuffix>preview.1.25428.12</AspireVersionPreviewSuffix>
+    <AspireVersion>9.5.2</AspireVersion>
+    <AspireVersionPreviewSuffix>preview.1.25522.3</AspireVersionPreviewSuffix>
     <CommunityToolkitVersion>9.7.2</CommunityToolkitVersion>
   </PropertyGroup>
   <ItemGroup>
