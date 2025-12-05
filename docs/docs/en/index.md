@@ -33,4 +33,4 @@ This shifts much of the application logic from developers to the model. Clear in
 
 [Microsoft Foundry](https://azure.microsoft.com/products/ai-foundry/){:target="_blank"} is Microsoft’s secure, flexible platform for designing, customizing, and managing AI apps and agents. Everything—models, agents, tools, and observability—lives behind a single portal, SDK, and REST endpoint, so you can ship to cloud or edge with governance and cost controls in place from day one.
 
-![Microsoft Foundry Architecture](media/azure-ai-foundry.png)
+![Microsoft Foundry Architecture](media/microsoft-foundry-overview.png)
