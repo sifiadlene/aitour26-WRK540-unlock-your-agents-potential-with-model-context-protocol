@@ -67,7 +67,7 @@ def get_rls_user_id(ctx: Context) -> str:
     return rls_user_id
 
 
-# @mcp.tool()
+@mcp.tool()
 async def semantic_search_products(
     ctx: Context,
     query_description: Annotated[
